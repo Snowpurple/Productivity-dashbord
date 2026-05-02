@@ -1,0 +1,80 @@
+ @font-face {
+     font-family: light;
+     src: url(./aeonika-font);
+ }
+ 
+ :root {
+     --pri: #546B41;
+     --sec: #99AD7A;
+     --tri1: #DCCCAC;
+     --tri2: #FFF8EC;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+ }
+ /* body {
+    background: beige;
+} */
+ 
+ #main {
+     height: 100%;
+     width: 100%;
+     background-color: darkslategray;
+     background-color: var(--pri);
+ }
+ /* h1 {
+     font-family: light;
+     color: var(--pri);
+ } */
+ 
+ nav {
+     position: fixed;
+     width: 100%;
+     height: 60px;
+     background-color: var(--sec);
+ }
+ 
+ section.allElems {
+     height: 100%;
+     width: 100%;
+     padding: 40px;
+     padding-top: 80px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     gap: 20px;
+ }
+ 
+ .elem {
+     height: 300px;
+     width: 280px;
+     background-color: var(--tri1);
+     /* padding: 30px 40px; */
+     font-size: 16px;
+     border-radius: 10px;
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ .elem img {
+     opacity: 0.85;
+     border-radius: 15px;
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .elem h2 {
+     color: var(--tri2);
+     position: absolute;
+     right: 5%;
+     bottom: 5%;
+ }
