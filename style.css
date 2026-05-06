@@ -137,7 +137,7 @@
      padding: 30px;
  }
  
- .todo-container .addTask form input {
+ .todo-container .addTask form input#task-input {
      padding: 10px 30px;
      width: 100%;
      font-size: 18px;
@@ -152,7 +152,7 @@
      font-size: 18px;
      background-color: var(--pri);
      margin-top: 2px;
-     margin-bottom: 20px;
+     margin-bottom: 10px;
      border-radius: 5px;
  }
  
@@ -198,6 +198,26 @@
  .task h5 {
      color: var(--tri1);
      font-size: 18px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+ 
+ .task h5 span {
+     background-color: red;
+     color: var(--pri);
+     font-size: 18px;
+     padding: 4px 6px;
+     border-radius: 50px;
+     font-size: 11px;
+ }
+ 
+ .task h5 span.true {
+     opacity: 1;
+ }
+ 
+ .task h5 span.false {
+     opacity: 0;
  }
  
  .task button {
@@ -212,6 +232,16 @@
      display: flex;
      align-items: center;
      justify-content: flex-start;
-     background-color: var(--pri);
+     padding: 10px 0;
+     /* background-color: var(--pri); */
      width: 100%;
+ }
+ 
+ .mark-imp input {
+     scale: 1.2;
+ }
+ 
+ .mark-imp label {
+     margin-left: 10px;
+     font-size: 14px;
  }
